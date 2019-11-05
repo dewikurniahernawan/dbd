@@ -11,7 +11,19 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'modules' => [
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module'
+         ]
+      ],
     'components' => [
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                   '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                ],
+            ],
+       ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'XRlXzu0DsZdjVNPnEI-X6QCTZDwB5x7a',
